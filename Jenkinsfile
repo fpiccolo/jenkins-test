@@ -9,7 +9,6 @@ pipeline {
             steps {
                 echo 'Ciao mondo'
             }
-
         }
     }
 }
