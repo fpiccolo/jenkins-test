@@ -47,5 +47,17 @@ pipeline {
                 }
             }
         }
+        stage('Docker'){
+            agent{
+                docker {
+                    image 'fpic/php-7.2-cli'
+                }
+            }
+            steps{
+                scripts{
+                    sh "php --version"
+                }
+            }
+        }
     }
 }
